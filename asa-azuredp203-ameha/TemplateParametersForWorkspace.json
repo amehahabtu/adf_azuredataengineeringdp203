@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "asa-azuredp203-ameha"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"asa-azuredp203-ameha-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"LS_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://azuredp203datalake1.dfs.core.windows.net"
+		},
+		"asa-azuredp203-ameha-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://azuredp203datalake1.dfs.core.windows.net"
+		}
+	}
+}
