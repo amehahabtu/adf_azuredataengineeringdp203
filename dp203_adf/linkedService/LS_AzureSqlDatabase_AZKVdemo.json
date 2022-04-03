@@ -1,0 +1,23 @@
+{
+	"name": "LS_AzureSqlDatabase_AZKVdemo",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sqlserver-ameha.database.windows.net;Initial Catalog=sqldb-ameha;User ID=adminameha",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlmypasswsecret",
+				"secretVersion": "ae57d1e2778b461c875c2ed0a3281550"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
